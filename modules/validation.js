@@ -43,7 +43,7 @@ function validateInput(type) {
 
     while (true) {
         let input = prompt();
-        if (input === "end") process.exit(0);
+        if (input.toLowerCase() === "end") process.exit(0);
         if (validator(input)) return input;
         console.log(message);
     }
